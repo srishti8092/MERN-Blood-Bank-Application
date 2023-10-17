@@ -37,14 +37,23 @@ const HomePage = () => {
       ) : (
         <>
           <div className="container">
+            <h4 style={{ margin: "0px", color: "maroon" }}> Add Inventory</h4>
             <h4
               className="ms-4"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
               style={{ cursor: "pointer" }}
             >
-              <i className="fa-solid fa-plus text-success py-4"></i>
-              Add Inventory
+              <i
+                className="fa-solid fa-square-plus"
+                size="xl"
+                // style={{ float: "right", right: 0 }}
+                style={{
+                  display: "flex",
+                  justifyContent: "right",
+                  marginRight: "80px",
+                }}
+              ></i>
             </h4>
             <table className="table">
               <thead>
